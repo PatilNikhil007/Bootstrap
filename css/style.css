@@ -1,0 +1,448 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ padding:0px; margin:0px;}
+body{ padding:0px; margin:0px; font-family: 'Poppins', sans-serif; font-size:14px; font-weight:400;}
+ul,li,h1,h2,h3,h5,h6,ol,a{ padding:0px; margin:0px; list-style-type:none; }
+a{ font-size:14px; color:#000;}
+a:hover{ color:#fff; list-style:none; text-decoration:none; box-shadow:0px 3px 5px rgba(0,0,0,0.1);}
+p{ font-size:14px; font-weight:400; } 
+
+.Main-Wrapper {
+    background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.Main-Wrapper1 {
+    background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+ .formCenter {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    background: #fff;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+    padding:30px;
+    border-radius: 5px;
+}
+.formCenter1 {
+    width: 100%;
+    max-width: 800px;
+    margin: 100px auto;
+    background: #fff;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+    padding:30px;
+    border-radius: 5px;
+}
+
+ .formCenter input {
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    height: 50px;
+    border-radius: 4px;
+    background: #dadcdb;
+    color: #acb0af;
+    position: relative;
+}
+.form-group {
+    position: relative;
+}
+  .checkbox input{width: 15px; padding: 0px; margin-top: 0px;}
+.checkbox {
+    width: 100%;
+    width: 100%;
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block;
+}
+  .checkbox label{line-height: 50px;}
+  .checkbox .capImg{width: 50px; float: right;}
+  
+ .formCenter h1 {
+    font-size: 30px;
+    color: #449dd7;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.Sumit-btn {
+    background: #272c2f;
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+}
+::placeholder {
+    color: #acb0af;
+	font-size:16px;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #acb0af;
+   font-size:16px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #acb0af;
+   font-size:16px;
+}
+.Header .navbar-inverse {
+    background-color: #306796;
+    border-color: 0px !important;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    padding: 15px 0px;
+}
+.navbar-inverse {
+    background-color: #222;
+    border-color: transparent !important;
+}
+.Header nav li{ position:relative; }
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    font-size: 15px;
+	-webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: rgba(255,255,255,0.7);
+    background-color: transparent;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: rgba(255,255,255,0.7);
+    background-color: transparent;
+}
+.Submenu {
+    background: rgba(0,0,0,0.5);
+    width: 180px;
+    padding: 10px;
+    display: none;
+	position:absolute
+}
+.Submenu li {
+    border-bottom: 1px dotted #fff;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+}
+.Submenu li a {
+    line-height: 28px;
+    color: #fff;
+    font-size: 14px;
+    list-style: none !important;
+    text-decoration: none !important;
+}
+.Submenu li a:hover{     color: rgba(255,255,255,0.7); }
+.nil li:hover .Submenu{ display:block; }
+
+.Banner_Section{ background:url(../Images/banner.jpg) center center; height:450px; }
+.banner_Text h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+    font-weight: 600;
+}
+.banner_Text {
+    padding-top: 100px;
+}
+/* Shutter Out Horizontal */
+.hvr-shutter-out-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-out-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2098D1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+  color: white;
+}
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.Btn {
+    font-size: 15px;
+    padding: 15px 30px;
+    text-decoration: none !important;
+    list-style: none !important;
+    background: #fff;
+    color: #242424;
+    margin-top: 20px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    text-transform: capitalize;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.banner_Text p {
+    font-size: 18px;
+    color: rgba(255,255,255,0.9);
+}
+.Pricing_Wrapper {
+    max-width: 800px;
+    margin: auto;
+}
+.Price {
+    text-align: center;
+    padding: 30px 0px;
+    border-radius: 10px;
+    color: #fff;
+    -webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+}
+.Price1 {
+    background-image: linear-gradient(to bottom right, #70b5f0, #cd2cb6);
+} 
+.Price2 {
+    background-image: linear-gradient(to bottom right, #f532d6, #ffe979);
+    margin-left: -1px;
+} 
+.Price3 {
+    background-image: linear-gradient(to bottom right, #7b48cb, #42fa80);
+}    
+.PricrImg {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-radius: 100px;
+    overflow: hidden;
+    box-shadow: 0px 5px 3px rgba(0,0,0,0.2);
+    background-image: linear-gradient(to top right, #70b5f0, #cd2cb6);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.Price2 .PricrImg {
+    background-image: linear-gradient(to bottom right, #f532d6, #ffe979);
+}
+.Price3 .PricrImg {
+    background-image: linear-gradient(to bottom right, #7b48cb, #42fa80);
+}
+
+.Price_Btn {
+    font-size: 18px;
+    background: #fff;
+    padding: 10px 20px;
+    margin-top: 22px;
+    display: inline-block;
+    border-radius: 100px;
+    text-decoration: none !important;
+    list-style: none;
+    color: #242424;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+}
+.PricrImg img {
+    width: 100%;
+}
+.Pricing {
+    padding: 70px 0px;
+}
+.Price:hover {
+    transform: scale(1.1);
+	z-index:1;
+	position:relative;
+}
+.Pricing_Wrapper .col-sm-4 {
+    padding: 0px 0px;
+}
+.Price h4 {
+    margin-bottom: 20px;
+}
+.Price ul li {
+    margin-bottom: 5px;
+}
+.Price:hover .Price_Btn{ }
+
+footer {
+    background: #306796;
+    color: rgba(255,255,255,0.7);
+    padding: 35px 0px;
+}
+footer h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+footer li {
+    line-height: 28px;
+}
+footer li a {
+    color: #dcdcdc;
+    list-style: none !important;
+    text-decoration: none !important;
+	-webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+}
+footer li a:hover {
+    color: #a5a0a0;
+    padding-left: 10px;
+}
+.navbar-inverse .navbar-brand {
+    color: #ffffff;
+}
+
+
+
+
+
+/*INNER PAGE*/
+
+.Banner_Inner {
+    background: #0fbbe9;
+    height: 229px;
+}
+.Inner_Section {
+    padding: 70px 0px;
+}
+.btn_blue {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 10px;
+    float: right;
+    margin-bottom: 20px;
+    text-decoration: none !important;
+    list-style: none;
+}
+.btn_blue:hover {
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    color: #fff;
+}
+.Table_Section tr td {
+    padding: 15px 10px !important;
+}
+.Table_Section th {
+    padding: 10px 10px !important;
+}
+.Description {
+    margin: 30px 0px;
+}
+.payment_details_Section ul li {
+    line-height: 30px;
+    position: relative;
+    padding-left: 28px;
+}
+.year {
+    background: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    width: 50%;
+    display: block;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 20px;
+	list-style:none !important;
+	text-decoration:none !important;
+	
+}
+.payment_details_Section ul li:before {
+    position: absolute;
+    content: '\f192';
+    font-family: 'fontawesome';
+    color: #007bff;
+    left: 0px;
+}
+.year:hover{ color:#fff; }
+
+.Payment_Wrapper h1 {
+    background: rgba(29,113,185,1);
+    color: #fff;
+    font-size: 20px;
+    padding: 12px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #d8cdcd;
+}
+.Payment_Wrapper_inner input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #d8cdcd;
+}
+.Payment_Wrapper_inner label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.Payment_Wrapper {
+    border: 1px solid #e4dede;
+    border-radius: 10px;
+    float: left;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+.matop {
+    clear: both;
+    margin-top: 28px !important;
+    float: left;
+}
+.nil .col-sm-6 {
+    padding: 0px 5px;
+}
+.nil {
+    margin-left: 10px;
+}
+.Pay_btn {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    clear: both;
+    float: left;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    margin: 27px auto;
+	cursor:pointer;
+}
+.Pay_btn:hover {
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+}
+.Payment_Wrapper_inner {
+    padding: 0px 5px;
+}
+.payment_details_Section h1 {
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 10px;
+}
+
+
+
+/*INNER PAGE*/
