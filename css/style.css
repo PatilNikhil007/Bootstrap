@@ -7,7 +7,11 @@ ul,li,h1,h2,h3,h5,h6,ol,a{ padding:0px; margin:0px; list-style-type:none; }
 a{ font-size:14px; color:#000;}
 a:hover{ color:#fff; list-style:none; text-decoration:none; box-shadow:0px 3px 5px rgba(0,0,0,0.1);}
 p{ font-size:14px; font-weight:400; } 
-
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
 .Main-Wrapper {
     background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
     background-size: cover;
@@ -53,7 +57,7 @@ p{ font-size:14px; font-weight:400; }
 .form-group {
     position: relative;
 }
-  .checkbox input{width: 15px; padding: 0px; margin-top: 0px;}
+.checkbox input{width: 15px; padding: 0px; margin-top: 0px;}
 .checkbox {
     width: 100%;
     width: 100%;
@@ -325,26 +329,30 @@ footer li a:hover {
 }
 .Inner_Section {
     padding: 70px 0px;
+    background: #f1f1f1;
 }
 .btn_blue {
     background: #007bff;
     color: #fff;
     padding: 10px 10px;
-    border-radius: 10px;
     float: right;
     margin-bottom: 20px;
     text-decoration: none !important;
     list-style: none;
+    font-size: 16px;
 }
 .btn_blue:hover {
     box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
-    color: #fff;
+    color: #242424;
 }
 .Table_Section tr td {
     padding: 15px 10px !important;
+    font-size: 15px;
+    font-weight: 500;
 }
 .Table_Section th {
     padding: 10px 10px !important;
+    font-size: 16px;
 }
 .Description {
     margin: 30px 0px;
@@ -377,37 +385,46 @@ footer li a:hover {
 .year:hover{ color:#fff; }
 
 .Payment_Wrapper h1 {
-    background: rgba(29,113,185,1);
     color: #fff;
     font-size: 20px;
     padding: 12px 20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-input[type="text"] {
+input[type="text"], select {
     width: 100%;
-    padding: 10px;
+    padding: 13px 10px 10px 40px;
     border-radius: 5px;
     box-shadow: none;
-    border: 1px solid #d8cdcd;
+    border: none;
+    background: no-repeat;
+    border-bottom: 1px solid #ffffff;
+    color: #fff;
+    border-radius: unset;
 }
 .Payment_Wrapper_inner input[type="text"] {
     width: 100%;
     padding: 10px;
-    border-radius: 5px;
     box-shadow: none;
-    border: 1px solid #d8cdcd;
+    color: #fff;
+    background: no-repeat;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: unset;
 }
 .Payment_Wrapper_inner label {
     font-size: 16px;
     margin-bottom: 10px;
     font-weight: 500;
+    color: #fff;
+}
+.PaymentMethod {
+    background-image: linear-gradient(to bottom right, #70b5f0, #cd2cb6);
 }
 .Payment_Wrapper {
-    border: 1px solid #e4dede;
     border-radius: 10px;
     float: left;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    padding: 30px 0;
 }
 .matop {
     clear: both;
@@ -422,15 +439,15 @@ input[type="text"] {
 }
 .Pay_btn {
     background: #007bff;
-    color: #fff;
+    color: #000;
     padding: 10px 20px;
     clear: both;
     float: left;
     width: 100%;
-    border-radius: 5px;
     text-align: center;
-    margin: 27px auto;
-	cursor:pointer;
+    margin: 40px auto 15px;
+    cursor: pointer;
+    font-size: 15px;
 }
 .Pay_btn:hover {
     box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
@@ -440,9 +457,261 @@ input[type="text"] {
 }
 .payment_details_Section h1 {
     border-bottom: 1px solid #d8d8d8;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+}
+.Inner-Container .form-group {
+    clear: both;
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.Inner-Container {
+    width: 50%;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom right, #70b5f0, #cd2cb6);
+    padding: 40px;
+}
+.Inner-Container h4 {
+    background: #fff;
+    color: #000;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    position: relative;
+	font-size:17px;
+}
+.Inner-Container h4:before {
+    content: '\f00c';
+    position: absolute;
+    font-family: 'fontawesome';
+    right: 20px;
+    font-size: 16px;
+    top: 14px;
+    font-weight: 400;
+    background: #74ad46;
+    padding: 8px;
+    border-radius: 100px;
+    color: #fff;
+}
+.Edit_btn {
+    background: #007bff;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 13px;
+    display: inline-block;
+}
+.Back_btn{
+    background: #007bff;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 15px;
+	cursor:pointer;
+}
+.Edit_btn:hover,.Back_btn:hover {
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+}
+.plans_edit label {
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+.plans_edit .Back_btn {
+    color: #000;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 1px;
+    font-size: 15px;
+    display: inline-block;
+    border-radius: 0px;
+	margin-left:10px;
+}
+.plans_edit h1 {
+    margin-bottom: 40px;
+	text-align:center;
+}
+.Inner-Container.plans_edit {
+    padding: 40px;
+    color: #242424;
+    background-image: linear-gradient(to bottom right, #70b5f0, #cd2cb6);
+}
+::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+	font-size:14px;
+	font-weight:400;
 }
 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #fff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #fff;
+}
+select:required:invalid {
+    color: #e2e2e2;
+}
+input[type="text"]:focus,select:focus {
+    outline: none;
+}
+.form-group i {
+    position: absolute;
+    top: 15px;
+    color: #fff;
+    left: 27px;
+    font-size: 16px;
+}
+.hvr-rectangle-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #007bff;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-rectangle-in:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-rectangle-in:hover, .hvr-rectangle-in:focus, .hvr-rectangle-in:active {
+  color: white;
+}
+.hvr-rectangle-in:hover:before, .hvr-rectangle-in:focus:before, .hvr-rectangle-in:active:before {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.Save_btn {
+    padding: 10px 20px;
+    border-radius: 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.Payment_Wrapper h1 {
+    position: relative;
+    padding-left: 30px;
+}
+.Payment_Wrapper h1:before {
+    content: '\f192';
+    font-family: 'fontawesome';
+    position: absolute;
+    font-size: 17px;
+    top: 2px;
+    color: #fff;
+	left:0px;
+}
+.Sabk_btn {
+    margin-top: 20px;
+}	
+label {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.Inner-Container span{ font-size:15px; color:#fff; }
+
+select option{ color:#000;}
+
+tr:nth-child(even) {background: #d0e2f1; color:#242424;}
+tr:nth-child(odd) {background: #FFF;}
+.table-hover>tbody>tr:hover {
+    background-color: #d0e2f1;
+    color: #242424;
+}
+.Table_Section tr td a {
+    color: #007bff;
+}
+.Table_Section tr td a:hover{ box-shadow:unset;}	
+
+.hvr-rectangle-in1 {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background:#fff;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.hvr-rectangle-in1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:#007bff;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-rectangle-in1:hover:before, .hvr-rectangle-in1:focus:before, .hvr-rectangle-in1:active:before {
+    -webkit-transform: scale(0);
+    /* transform: scale(0); */
+	color:#242424;
+}
+
+.btn_blue1 {
+    padding: 10px 20px;
+	font-size:16px;
+	color: #fff;
+	float:left;
+}
+.btn_blue1:hover { color:#242424;}
+.Inner_Banner {
+    background: url(../Images/innerbanner.png) no-repeat center center;
+    height: 300px;
+    text-align: center;
+}
+
+.Inner_Banner .banner_Text {
+    padding-top: 110px;
+}
+.Inner_Banner .banner_Text {
+    padding-top: 110px;
+}
+i.fa.fa-eye {
+    color: #242424;
+    margin-right: 5px;
+    font-size: 16px;
+}
+i.fa.fa-trash {
+    color: #242424;
+    margin-right: 5px;
+    font-size: 16px;
+}
 
 
 /*INNER PAGE*/
