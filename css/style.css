@@ -694,6 +694,7 @@ tr:nth-child(odd) {background: #FFF;}
     background: url(../Images/innerbanner.png) no-repeat center center;
     height: 300px;
     text-align: center;
+    background-size: cover;
 }
 
 .Inner_Banner .banner_Text {
@@ -713,5 +714,35 @@ i.fa.fa-trash {
     font-size: 16px;
 }
 
+.Product_Wrapper {
+    text-align: center;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 25px 0px;
+    background: #fff;
+}
+.ProductImg {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: auto;
+}
+.Product_body {
+    padding: 20px 12px;
+}
+.Product_body h3 {
+    margin-bottom: 15px;
+	font-size:17px;
+}
+.Product_body p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.Product_body .Edit_btn,.Product_body .Back_btn {
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+}
+.Product_Wrapper:hover {
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
 
 /*INNER PAGE*/
