@@ -1,172 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Stacksimple-Product</title>
+  <title>Products Show</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900" rel="stylesheet">
-  
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
+
 <body>
-<div class="Header">
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right nil">
-        <li class="dropdown">
-          <a class="MainMenu" data-toggle="dropdown" href="#">Admin</a>
-          <ul class="Submenu">
-            <li><a href="#">Leads</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Plans</a></li>
+  <div class="Header">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right nil">
+            <li class="dropdown">
+              <a class="MainMenu" data-toggle="dropdown" href="#">Admin</a>
+              <ul class="Submenu">
+                <li><a href="#">Leads</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Plans</a></li>
+              </ul>
+            </li>
+            <li class="active"><a href="#">Dashboard</a></li>
+            
+            <li><a class="MainMenu" data-toggle="dropdown" href="#">My Account</a>
+              <ul class="Submenu">
+                <li><a href="#">Purchases</a></li>
+                <li><a href="#">Edit Profile</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul></li>
           </ul>
-        </li>
-        <li class="active"><a href="#">Dashboard</a></li>
+        </div>
+      </div>
+    </nav>
+  </div><!--Header-->
+
+  <div class="Inner_Banner">
+    <div class="container">
+      <div class="col-sm-12 banner_Text">
+        <h1>Product</h1>
+      </div><!--banner_Text-->
+    </div><!--container-->
+  </div><!--Banner_Section-->
+
+  <section class="leads_list Inner_Section ">
+    <div class="container">
+      <div class="row Product_show">
+        <div class="col-sm-6 col-md-3 col-xs-6">
+          <div class="Product_Wrapper">
+            <div class="ProductImg">
+              <img src="Images/product.jpg" alt="">
+            </div><!--ProductImg-->
+            <div class="Product_body">
+              <h3>Product</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <a class="Edit_btn hvr-rectangle-in">
+                More  →</a><a class="Back_btn hvr-rectangle-in">Buy $99.99</a>
+            </div><!--Product_body-->
+            <a class="Edit_btn hvr-rectangle-in"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>  Edit</a><a class="Back_btn hvr-rectangle-in"><< Back</a>
+          </div><!--Product_Wrapper-->
+        </div><!--col-sm-3-->
         
-        <li><a class="MainMenu" data-toggle="dropdown" href="#">My Account</a>
-          <ul class="Submenu">
-            <li><a href="#">Purchases</a></li>
-            <li><a href="#">Edit Profile</a></li>
-            <li><a href="#">Logout</a></li>
-          </ul></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-</div><!--Header-->
-<div class="Inner_Banner">
-<div class="container">
-<div class="col-sm-12 banner_Text">
-<h1>product</h1>
-</div><!--banner_Text-->
-</div><!--container-->
-</div><!--Banner_Section-->
+        <div class="col-sm-6 col-md-3 col-xs-6">
+          <div class="Product_Wrapper">
+            <div class="ProductImg">
+              <img src="Images/product.jpg" alt="">
+            </div><!--ProductImg-->
+            <div class="Product_body">
+              <h3>Product</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <a class="Edit_btn hvr-rectangle-in">  
+                More  →</a><a class="Back_btn hvr-rectangle-in">Buy $99.99</a>
+            </div><!--Product_body-->
+            <a class="Edit_btn hvr-rectangle-in"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>  Edit</a><a class="Back_btn hvr-rectangle-in"><< Back</a>
+          </div><!--Product_Wrapper-->
+        </div><!--col-sm-3-->
+        
+        <div class="col-sm-6 col-md-3 col-xs-6">
+          <div class="Product_Wrapper">
+            <div class="ProductImg">
+              <img src="Images/product.jpg" alt="">
+            </div><!--ProductImg-->
+            <div class="Product_body">
+              <h3>Product</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <a class="Edit_btn hvr-rectangle-in">  
+                More  →</a><a class="Back_btn hvr-rectangle-in">Buy $99.99</a>
+            </div><!--Product_body-->
+            <a class="Edit_btn hvr-rectangle-in"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>  Edit</a><a class="Back_btn hvr-rectangle-in"><< Back</a>
+          </div><!--Product_Wrapper-->
+        </div><!--col-sm-3-->
+        
+        <div class="col-sm-6 col-md-3 col-xs-6">
+          <div class="Product_Wrapper">
+            <div class="ProductImg">
+              <img src="Images/product.jpg" alt="">
+            </div><!--ProductImg-->
+            <div class="Product_body">
+              <h3>Product</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <a class="Edit_btn hvr-rectangle-in">  
+                More  →</a><a class="Back_btn hvr-rectangle-in">Buy $99.99</a>
+            </div><!--Product_body-->
+            <a class="Edit_btn hvr-rectangle-in"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>  Edit</a><a class="Back_btn hvr-rectangle-in"><< Back</a>
+          </div><!--Product_Wrapper-->
+        </div><!--col-sm-3-->            
+      </div><!--row-->
+    </div><!--container-->
+  </section><!--Inner_Section-->
 
-<section class="leads_list Inner_Section">
-<div class="container">
+ <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-xs-3">
+          <h3>LOGO IMG</h3>
+          <ul><li>© 2017 - 2018</li></ul>
+        </div>
+        <div class="col-sm-3 col-xs-3">
+          <h3>Features</h3>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Cool stuff</a></li>
+            <li><a href="#">Random feature</a></li>
+            <li><a href="#">Team feature</a></li>
+            <li><a href="#">Stuff for developers</a></li>
+            <li><a href="#">Another one</a></li>
+            <li><a href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 col-xs-3">
+          <h3>Help</h3>
+          <ul>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 col-xs-3">
+          <h3>About</h3>
+          <ul>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div><!--row-->
+    </div><!--container-->
+  </footer>
 
-
- <div class="row">
-  <div class="col-sm-3">
-  <div class="Product_Wrapper">
-   <div class="ProductImg">
-     <img src="Images/product.jpg" alt="">
-   </div><!--ProductImg-->
-   <div class="Product_body">
-     <h3>Product</h3>
-     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      <a class="Edit_btn hvr-rectangle-in">  
-      More  →</a><a class="Back_btn hvr-rectangle-in">Buy $99.99</a>
-   </div><!--Product_body-->
-   </div><!--Product_Wrapper-->
-  </div><!--col-sm-4-->
-  
-  <div class="col-sm-3">
-  <div class="Product_Wrapper">
-   <div class="ProductImg">
-     <img src="Images/product.jpg" alt="">
-   </div><!--ProductImg-->
-   <div class="Product_body">
-     <h3>Product</h3>
-     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      <a class="Edit_btn hvr-rectangle-in">  
-      More  →</a><a class="Back_btn hvr-rectangle-in">Buy $99.99</a>
-   </div><!--Product_body-->
-   </div><!--Product_Wrapper-->
-  </div><!--col-sm-4-->
-  
-  <div class="col-sm-3">
-  <div class="Product_Wrapper">
-   <div class="ProductImg">
-     <img src="Images/product.jpg" alt="">
-   </div><!--ProductImg-->
-   <div class="Product_body">
-     <h3>Product</h3>
-     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-   <a class="Edit_btn hvr-rectangle-in">  
-      More  →</a><a class="Back_btn hvr-rectangle-in">Buy $99.99</a>
-   </div><!--Product_body-->
-   </div><!--Product_Wrapper-->
-  </div><!--col-sm-4-->
-  
-  <div class="col-sm-3">
-  <div class="Product_Wrapper">
-   <div class="ProductImg">
-     <img src="Images/product.jpg" alt="">
-   </div><!--ProductImg-->
-   <div class="Product_body">
-     <h3>Product</h3>
-     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-   <a class="Edit_btn hvr-rectangle-in">  
-      More  →</a><a class="Back_btn hvr-rectangle-in">Buy $99.99</a>
-   </div><!--Product_body-->
-   </div><!--Product_Wrapper-->
-  </div><!--col-sm-4-->
-  
-  
-  
-  
-  
-  
-   
-</div><!--row-->
-
-</div><!--container-->
-</section><!--Inner_Section-->
-
-
-<footer>
-<div class="container">
-<div class="row">
-<div class="col-sm-3">
- <h3>LOGO IMG</h3>
- <ul><li>© 2017 - 2018</li></ul>
-</div>
-<div class="col-sm-3">
-<h3>Features</h3>
-<ul>
-<li><a href="#">Blog</a></li>
-<li><a href="#">Cool stuff</a></li>
-<li><a href="#">Random feature</a></li>
-<li><a href="#">Team feature</a></li>
-<li><a href="#">Stuff for developers</a></li>
-<li><a href="#">Another one</a></li>
-<li><a href="#">Last time</a></li>
-</ul>
-</div>
-<div class="col-sm-3">
-<h3>Help</h3>
-<ul>
-<li><a href="#">Forum</a></li>
-<li><a href="#">FAQ</a></li>
-<li><a href="#">Contact Us</a></li>
-</ul>
-</div>
-<div class="col-sm-3">
-<h3>About</h3>
-<ul>
-<li><a href="#">Team</a></li>
-<li><a href="#">Locations</a></li>
-<li><a href="#">Privacy</a></li>
-<li><a href="#">Terms</a></li>
-</ul>
-</div>
-</div><!--row-->
-</div><!--container-->
-</footer>
-
-<script src="js/jquery.min.js" type="text/javascript"></script>
-<script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>

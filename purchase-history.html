@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Payment Details</title>
+  <title>Purchase-History</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900" rel="stylesheet">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 
 <body>
@@ -50,68 +50,44 @@
   <div class="Inner_Banner">
     <div class="container">
       <div class="col-sm-12 banner_Text">
-       <h1>New Plan</h1>
+        <h1>Products</h1>
       </div><!--banner_Text-->
     </div><!--container-->
   </div><!--Banner_Section-->
 
-  <section class="Inner_Section payment_details_Section">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-xs-6">
-          <h1 class="Fon_siz">New Plan</h1>
-          <h4 class="Description">Description:</h4>
-          <h4>Plan details:</h4>
-          <ul>
-            <li>Detail 1</li>
-            <li>Detail 2</li>
-            <li>Detail 3</li>
-            <li>Detail 4</li>
-          </ul>
-          <a class="year" href="#">199.99 / year</a>
-        </div><!--col-sm-6-->
-
-        <div class="col-sm-4 col-xs-4">
-          <div class="Payment_Wrapper PaymentMethod">
-            <h1>Payment Details</h1>
-            <div class="Payment_Wrapper_inner">
-              <div class="form-group">
-                <div class="col-sm-12"><label>CARD NUMBER</label>
-                  <input type="text" placeholder="Valid Card Number"></div>
+  <section class="leads_list Inner_Section">
+    <div class="container">      
+      <div class="Table_Section table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Product</th>
+              <th>Plan</th>
+              <th>Card Used</th>
+              <th>Price Paid ($)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+             <td colspan="5">
+              <div class="Productimg">
+              <img src="Images/product.jpg">
+              <span>No Product Purchases! Whaaaaa?</span>
               </div>
-              
-              <div class="row matop">
-                <div class="col-sm-6">
-                  <div class="col-sm-12"> <label>EXPIRY DATE</label></div>
-                    <div class="nil">
-                    <div class="col-sm-6">
-                      <input type="text" placeholder="MM">
-                    </div>
-                    <div class="col-sm-6">
-                      <input type="text" placeholder="YY">
-                    </div>
-                  </div>
-                </div><!--col-sm-6-->
-                
-                <div class="col-sm-6">
-                  <div class="col-sm-12">
-                    <label>CV CODE</label>
-                    <input type="text" placeholder="CV">
-                  </div>
-                </div>            
-              </div>
-              
-              <div class="col-sm-12"><a class="Pay_btn hvr-rectangle-in">Pay</a></div>
-            </div><!--Payment_Wrapper_inner-->
+              </td>
+            </tr>
             
-          </div><!--Payment_Wrapper-->            
-        </div><!--col-sm-4-->        
-      </div><!--row-->
+            
+                   
+          </tbody>
+        </table>
+<!--        <a href="#" class="btn_blue1 hvr-rectangle-in1">New Product</a>  -->
+      </div><!--Table_Section-->   
     </div><!--container-->
-  </section><!--Pricing-->
+  </section><!--Inner_Section-->
 
-
- <footer>
+  <footer>
     <div class="container">
       <div class="row">
         <div class="col-sm-3 col-xs-3">
